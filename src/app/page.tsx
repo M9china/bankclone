@@ -36,7 +36,7 @@ export default function PaymentNotificationPage() {
       const pageWidth = pdf.internal.pageSize.getWidth();
       const pageHeight = pdf.internal.pageSize.getHeight();
 
-      const margin = 10; // 👈 change this to control side padding (0–20 works well)
+      const margin = 5; // 👈 change this to control side padding (0–20 works well)
 
       // Get image properties
       const imgProps = pdf.getImageProperties(imgData);
@@ -130,7 +130,7 @@ export default function PaymentNotificationPage() {
           width={100}
           height={100}
           crossOrigin="anonymous"
-          className="mx-auto mb-4 block pb-8 -mr-[0px] h-[6rem] w-auto object-contain bg-white"
+          className="mx-auto mb-4 block pb-8 -mr-[0px] h-[7rem] w-auto object-contain bg-white"
         />
 
         <p className="mb-4">To Whom it may Concern:</p>
@@ -149,10 +149,16 @@ export default function PaymentNotificationPage() {
             <strong>Trace ID :</strong> RJ8ZHSTP
           </p>
         </div>
-        <h3 className="font-bold mt-6 mb-2">Account Holder Name</h3>
-        <div className="mb-6 space-y-1">
-          <p>MR ZAMOKUHLE ALTON HLOPHE</p>
+        <h3 className="font-semibold mt-6 mb-2">Account Details</h3>
+        <div className="mb-6 space-y-1 ">
+          <p><strong>Account Status: </strong>Suspended</p>
+          <p> <strong>Account Holder Name:</strong> MR ZAMOKUHLE ALTON HLOPHE</p>
+          <p><strong>Account Number:</strong> 630444942331</p>
+          <p><strong>Account Type:</strong> Easy Zero</p>
+          <p><strong>Branch Code:</strong> 250655</p>
+          
         </div>
+
         <p className="mt-6 font-semibold">END OF NOTIFICATION</p>
         <div className="mt-4 space-y-4 text-xs text-black text-justify">
           <p>
