@@ -54,7 +54,7 @@ export default function PaymentNotificationPage() {
   };
 
   return (
-    <main className="min-h-screen bg-gray-100 flex flex-col items-center h-screen">
+    <main className="min-h-screen bg-white flex flex-col items-center">
 
       {/* Download Button */}
       <div className="w-full max-w-3xl flex justify-end mb-4">
@@ -85,21 +85,21 @@ export default function PaymentNotificationPage() {
       {/* Printable Content */}
       <section
         ref={contentRef}
-        className="bg-white w-full max-w-3xl shadow-md py-10 px-4 text-sm text-black leading-relaxed print:shadow-none print:max-w-none"
+        className="bg-white w-full max-w-3xl pb-10 pt-6 px-4 text-sm text-black leading-relaxed print:shadow-none print:max-w-none"
       >
         {/* Use plain <img> instead of Next.js <Image> so html-to-image can capture it */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/FNB-logo.png"
+          src="/fnblog.png"
           alt="First National Bank Logo"
           width={100}
           height={100}
           crossOrigin="anonymous"
-          className="mx-auto mb-4 block pb-8 "
+          className="mx-auto mb-4 block pb-8 -mr-[0px] h-[6rem] w-auto object-contain bg-white"
         />
 
         <p className="mb-4">To Whom it may Concern:</p>
-        <p className="mb-6">
+        <p className="mb-6 text-justify">
           First National Bank hereby confirms that the following account has been flagged thus suspended until further notice.
         </p>
         <div className="mb-6 space-y-1">
@@ -112,9 +112,9 @@ export default function PaymentNotificationPage() {
           <p>MR ZAMOKUHLE ALTON HLOPHE</p>
         </div>
         <p className="mt-6 font-semibold">END OF NOTIFICATION</p>
-        <div className="mt-8 space-y-4 text-xs text-black text-justify">
+        <div className="mt-4 space-y-4 text-xs text-black text-justify">
           <p>
-            Our customer (the payer) has requested First National Bank Limited to send this notification to you.
+            Our customer has requested First National Bank Limited to send this notification to you.
             Should you have any queries regarding the contents of this notice, please contact the account holder. First National Bank
             Limited does not guarantee or warrant the accuracy and integrity of the information and data transmitted
             electronically and we accept no liability whatsoever for any loss, expense, claim or damage, whether direct,
