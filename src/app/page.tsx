@@ -151,7 +151,7 @@ export default function PaymentNotificationPage() {
         </div>
         <h3 className="font-semibold mt-6 mb-2">Account Details</h3>
         <div className="mb-6 space-y-1 ">
-          <p>Account Status:Suspended</p>
+          <p>Account Status: Suspended</p>
           <p>Account Holder Name: MR ZAMOKUHLE ALTON HLOPHE</p>
           <p>Account Number: 630444942331</p>
           <p>Account Type: Easy Zero</p>
