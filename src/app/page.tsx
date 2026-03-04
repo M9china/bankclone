@@ -54,7 +54,7 @@ export default function PaymentNotificationPage() {
   };
 
   return (
-    <main className="min-h-screen bg-gray-100 flex flex-col items-center py-10 px-4">
+    <main className="min-h-screen bg-gray-100 flex flex-col items-center h-screen">
 
       {/* Download Button */}
       <div className="w-full max-w-3xl flex justify-end mb-4">
@@ -85,7 +85,7 @@ export default function PaymentNotificationPage() {
       {/* Printable Content */}
       <section
         ref={contentRef}
-        className="bg-white w-full max-w-3xl shadow-md p-10 text-sm text-black leading-relaxed print:shadow-none print:max-w-none"
+        className="bg-white w-full max-w-3xl shadow-md py-10 px-4 text-sm text-black leading-relaxed print:shadow-none print:max-w-none"
       >
         {/* Use plain <img> instead of Next.js <Image> so html-to-image can capture it */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -95,7 +95,7 @@ export default function PaymentNotificationPage() {
           width={100}
           height={100}
           crossOrigin="anonymous"
-          className="mx-auto mb-4 block"
+          className="mx-auto mb-4 block pb-8 "
         />
 
         <p className="mb-4">To Whom it may Concern:</p>
@@ -107,7 +107,7 @@ export default function PaymentNotificationPage() {
           <p><strong>Time Actioned :</strong> 15:02:01</p>
           <p><strong>Trace ID :</strong> RJ8ZHSTP</p>
         </div>
-        <h3 className="font-bold mt-6 mb-2">Account Holder Details</h3>
+        <h3 className="font-bold mt-6 mb-2">Account Holder Name</h3>
         <div className="mb-6 space-y-1">
           <p>MR ZAMOKUHLE ALTON HLOPHE</p>
         </div>
@@ -128,9 +128,7 @@ export default function PaymentNotificationPage() {
             is prohibited and may be unlawful. No liability or responsibility is accepted if information or data is, for
             whatever reason corrupted or does not reach its intended recipient. No warranty is given that this email is
             free of viruses. The views expressed in this email are, unless otherwise stated, those of the author and not
-            those of First National Bank Limited or its management. First National Bank Limited reserves the right to
-            monitor, intercept and block emails addressed to its users or take any other action in accordance with its
-            email use policy. Licensed divisions of FirstRand Bank Limited are authorised financial service providers in
+            those of First National Bank Limited or its management. Licensed divisions of FirstRand Bank Limited are authorised financial service providers in
             terms of the Financial Advisory and Intermediary Services Act 37 of 2002.
           </p>
           <p className="mt-4">
