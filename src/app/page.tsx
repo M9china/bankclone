@@ -112,7 +112,7 @@ export default function PaymentNotificationPage() {
           <p>MR ZAMOKUHLE ALTON HLOPHE</p>
         </div>
         <p className="mt-6 font-semibold">END OF NOTIFICATION</p>
-        <div className="mt-8 space-y-4 text-xs text-gray-700 text-justify">
+        <div className="mt-8 space-y-4 text-xs text-black text-justify">
           <p>
             Our customer (the payer) has requested First National Bank Limited to send this notification to you.
             Should you have any queries regarding the contents of this notice, please contact the account holder. First National Bank
