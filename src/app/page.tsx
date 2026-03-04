@@ -151,11 +151,11 @@ export default function PaymentNotificationPage() {
         </div>
         <h3 className="font-semibold mt-6 mb-2">Account Details</h3>
         <div className="mb-6 space-y-1 ">
-          <p><strong>Account Status: </strong>Suspended</p>
-          <p> <strong>Account Holder Name:</strong> MR ZAMOKUHLE ALTON HLOPHE</p>
-          <p><strong>Account Number:</strong> 630444942331</p>
-          <p><strong>Account Type:</strong> Easy Zero</p>
-          <p><strong>Branch Code:</strong> 250655</p>
+          <p>Account Status:Suspended</p>
+          <p>Account Holder Name: MR ZAMOKUHLE ALTON HLOPHE</p>
+          <p>Account Number: 630444942331</p>
+          <p>Account Type: Easy Zero</p>
+          <p>Branch Code: 250655</p>
           
         </div>
 
